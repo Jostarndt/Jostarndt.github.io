@@ -3,16 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Homepage</title>
+  <title>ilg:oil</title>
   <style>
     body {
       background-color: #FFF5EE; /* Setting the background color */
       font-family: Arial, sans-serif; /* Optional: Sets a nice default font */
+	/* Add some top padding to the body to prevent content from hiding behind the nav bar */
+	  padding-top: 50px;
     }
     /* Add your custom styles here */
+
+/* Navigation Bar Styles */
+nav {
+  background-color: #333; /* Dark background for the nav bar */
+  color: white;
+  position: fixed; /* Fixed positioning to keep the nav at the top */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures the nav bar is above other content */
+}
+
+nav ul {
+  list-style-type: none; /* Removes default list styling */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left; /* Aligns the list items horizontally */
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #ddd; /* Color change on hover */
+  color: black;
+}
+
     header {
       text-align: center;
       padding: 2rem 0;
+	font-family: "Computer Modern", serif;
+	letter-spacing: 5px;
+	font-size: 30px;
+	/* font-weight: bold; */
     }
     main {
       max-width: 800px;
@@ -28,25 +69,35 @@
 </head>
 <body>
 
+<nav>
+  <ul>
+    <li><a href="#heritage">Heritage</a></li>
+    <li><a href="#production">Production</a></li>
+    <li><a href="#contact">Taste/shopping?</a></li>
+  </ul>
+</nav>
+
   <header>
-    <h1>Welcome to My Homepage</h1>
+    <h1>ilg:oil</h1>
   </header>
 
   <main>
-    <section>
-      <h2>About Me</h2>
+    <section id="heritage">
+      <h2>Heritage</h2>
       <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
     </section>
 
-    <section>
-      <h2>My Portfolio</h2>
-      <p>Here you might want to showcase some of your work or projects you have been involved in.</p>
-    </section>
+	<section id="production">
+		<h2>Production</h2>
+		<p>This is a paragraph about myself. </p>
+	</section>
+	
+	<section id="taste">
+		<h2>Taste</h2>
+		<p>This is a paragraph about the Taste of ilg:oil.</p>
+	</section>
 
-    <section>
-      <h2>Contact</h2>
-      <p>If you like to get in touch with me, you can reach me at <a href="mailto:email@example.com">email@example.com</a></p>
-    </section>
+
   </main>
 
   <footer>
