@@ -12,9 +12,14 @@
 	  padding-top: 50px;
     }
     /* Add your custom styles here */
-
+section {
+	overflow-y: visible; /* Allows vertical scrolling */
+	/*min-height: 100vh;  100% of the viewport height */
+	/*scroll-snap-align: start;  For scroll-snapping */
+}
 /* Navigation Bar Styles */
 nav {
+	display: none; /* Hidden at first */
   background-color: #333; /* Dark background for the nav bar */
   color: white;
   position: fixed; /* Fixed positioning to keep the nav at the top */
@@ -59,6 +64,7 @@ nav li a:hover {
       max-width: 800px;
       margin: auto;
       padding: 1rem;
+	overflow-y: visible; /* Allows vertical scrolling */
     }
     footer {
       text-align: center;
@@ -73,7 +79,7 @@ nav li a:hover {
   <ul>
     <li><a href="#heritage">Heritage</a></li>
     <li><a href="#production">Production</a></li>
-    <li><a href="#contact">Taste/shopping?</a></li>
+    <li><a href="#taste">Taste</a></li>
   </ul>
 </nav>
 
@@ -84,6 +90,41 @@ nav li a:hover {
   <main>
     <section id="heritage">
       <h2>Heritage</h2>
+      <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
+      <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
+      <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
+      <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
+      <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
+      <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
+      <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
+      <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
+      <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
+      <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
+      <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
+      <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
+      <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
+      <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
+      <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
+      <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
+      <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
+      <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
+      <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
+      <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
+      <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
+      <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
+      <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
+      <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
+      <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
+      <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
+      <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
+      <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
+      <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
+      <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
+      <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
+      <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
+      <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
+      <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
+      <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
       <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
     </section>
 
@@ -103,6 +144,17 @@ nav li a:hover {
   <footer>
     <p>&copy; 2023 Your Name</p>
   </footer>
+
+<script>
+  window.addEventListener('scroll', function() {
+    var nav = document.querySelector('nav');
+    if (window.pageYOffset > 0) {
+      nav.style.display = 'block'; // Show the nav bar
+    } else {
+      nav.style.display = 'none'; // Hide the nav bar
+    }
+  });
+</script>
 
 </body>
 </html>
