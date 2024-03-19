@@ -13,10 +13,19 @@
     }
     /* Add your custom styles here */
 section {
+	/*background-color: #FFF3FF;*/
 	overflow-y: visible; /* Allows vertical scrolling */
 	/*min-height: 100vh;  100% of the viewport height */
 	/*scroll-snap-align: start;  For scroll-snapping */
 }
+.overflow-image {
+  position: absolute;
+  right: 600px;
+  width: 300px;
+  height: auto;
+  z-index: 10; /* adjust as necessary to be above or below other elements */
+}
+
 /* Navigation Bar Styles */
 nav {
 	display: none; /* Hidden at first */
@@ -53,6 +62,7 @@ nav li a:hover {
 }
 
     header {
+	background-color: #EEBBFF;
       text-align: center;
       padding: 2rem 0;
 	font-family: "Computer Modern", serif;
@@ -127,7 +137,7 @@ nav li a:hover {
       <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
       <p>This is a paragraph about myself. Here you can introduce yourself and provide some information on what you do.</p>
 	<!-- Insert your image below the paragraph -->
-	<img src="media/olive.jpg" alt="Olive.">
+	<img src="media/olive.jpg" alt="Olive." class="overflow-image">
     </section>
 
 	<section id="production">
